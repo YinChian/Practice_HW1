@@ -40,7 +40,7 @@ always
 always
   #31 clk_sma = ~clk_sma;  // 16129032Hz
   
-assign key[0] = reset_n;
+//assign key[0] = reset_n;
 //assign key[1] = reset_n;
 //assign key[2] = reset_n;
 //assign key[3] = reset_n;

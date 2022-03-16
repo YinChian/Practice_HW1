@@ -1,73 +1,459 @@
 |lab1
-SMA_CLKIN => ~NO_FANOUT~
-KEY[0] => ~NO_FANOUT~
+SMA_CLKIN => SMA_CLKIN.IN1
+KEY[0] => reset.IN2
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-CLOCK_50 => ~NO_FANOUT~
-HEX0[0] <= <GND>
-HEX0[1] <= <GND>
-HEX0[2] <= <GND>
-HEX0[3] <= <GND>
-HEX0[4] <= <GND>
-HEX0[5] <= <GND>
-HEX0[6] <= <GND>
-HEX0[7] <= <GND>
-HEX1[0] <= <GND>
-HEX1[1] <= <GND>
-HEX1[2] <= <GND>
-HEX1[3] <= <GND>
-HEX1[4] <= <GND>
-HEX1[5] <= <GND>
-HEX1[6] <= <GND>
-HEX1[7] <= <GND>
-HEX2[0] <= <GND>
-HEX2[1] <= <GND>
-HEX2[2] <= <GND>
-HEX2[3] <= <GND>
-HEX2[4] <= <GND>
-HEX2[5] <= <GND>
-HEX2[6] <= <GND>
-HEX2[7] <= <GND>
-HEX3[0] <= <GND>
-HEX3[1] <= <GND>
-HEX3[2] <= <GND>
-HEX3[3] <= <GND>
-HEX3[4] <= <GND>
-HEX3[5] <= <GND>
-HEX3[6] <= <GND>
-HEX3[7] <= <GND>
-HEX4[0] <= <GND>
-HEX4[1] <= <GND>
-HEX4[2] <= <GND>
-HEX4[3] <= <GND>
-HEX4[4] <= <GND>
-HEX4[5] <= <GND>
-HEX4[6] <= <GND>
-HEX4[7] <= <GND>
-HEX5[0] <= <GND>
-HEX5[1] <= <GND>
-HEX5[2] <= <GND>
-HEX5[3] <= <GND>
-HEX5[4] <= <GND>
-HEX5[5] <= <GND>
-HEX5[6] <= <GND>
-HEX5[7] <= <GND>
-HEX6[0] <= <GND>
-HEX6[1] <= <GND>
-HEX6[2] <= <GND>
-HEX6[3] <= <GND>
-HEX6[4] <= <GND>
-HEX6[5] <= <GND>
-HEX6[6] <= <GND>
-HEX6[7] <= <GND>
-HEX7[0] <= <GND>
-HEX7[1] <= <GND>
-HEX7[2] <= <GND>
-HEX7[3] <= <GND>
-HEX7[4] <= <GND>
-HEX7[5] <= <GND>
-HEX7[6] <= <GND>
-HEX7[7] <= <GND>
+CLOCK_50 => CLOCK_50.IN2
+HEX0[0] << <GND>
+HEX0[1] << <GND>
+HEX0[2] << <GND>
+HEX0[3] << <GND>
+HEX0[4] << <GND>
+HEX0[5] << <GND>
+HEX0[6] << <GND>
+HEX1[0] << <GND>
+HEX1[1] << <GND>
+HEX1[2] << <GND>
+HEX1[3] << <GND>
+HEX1[4] << <GND>
+HEX1[5] << <GND>
+HEX1[6] << <GND>
+HEX2[0] << <GND>
+HEX2[1] << <GND>
+HEX2[2] << <GND>
+HEX2[3] << <GND>
+HEX2[4] << <GND>
+HEX2[5] << <GND>
+HEX2[6] << <GND>
+HEX3[0] << <GND>
+HEX3[1] << <GND>
+HEX3[2] << <GND>
+HEX3[3] << <GND>
+HEX3[4] << <GND>
+HEX3[5] << <GND>
+HEX3[6] << <GND>
+HEX4[0] << <GND>
+HEX4[1] << <GND>
+HEX4[2] << <GND>
+HEX4[3] << <GND>
+HEX4[4] << <GND>
+HEX4[5] << <GND>
+HEX4[6] << <GND>
+HEX5[0] << <GND>
+HEX5[1] << <GND>
+HEX5[2] << <GND>
+HEX5[3] << <GND>
+HEX5[4] << <GND>
+HEX5[5] << <GND>
+HEX5[6] << <GND>
+HEX6[0] << <GND>
+HEX6[1] << <GND>
+HEX6[2] << <GND>
+HEX6[3] << <GND>
+HEX6[4] << <GND>
+HEX6[5] << <GND>
+HEX6[6] << <GND>
+HEX7[0] << <GND>
+HEX7[1] << <GND>
+HEX7[2] << <GND>
+HEX7[3] << <GND>
+HEX7[4] << <GND>
+HEX7[5] << <GND>
+HEX7[6] << <GND>
+
+
+|lab1|mod_1sec:u1
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+reset => counter[8].ACLR
+reset => counter[9].ACLR
+reset => counter[10].ACLR
+reset => counter[11].ACLR
+reset => counter[12].ACLR
+reset => counter[13].ACLR
+reset => counter[14].ACLR
+reset => counter[15].ACLR
+reset => counter[16].ACLR
+reset => counter[17].ACLR
+reset => counter[18].ACLR
+reset => counter[19].ACLR
+reset => counter[20].ACLR
+reset => counter[21].ACLR
+reset => counter[22].ACLR
+reset => counter[23].ACLR
+reset => counter[24].ACLR
+reset => counter[25].ACLR
+oneHz <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3
+CLOCK_50 => CLOCK_50.IN12
+reset => reset.IN12
+oneHz => result[31]~reg0.ENA
+oneHz => result[30]~reg0.ENA
+oneHz => result[29]~reg0.ENA
+oneHz => result[28]~reg0.ENA
+oneHz => result[27]~reg0.ENA
+oneHz => result[26]~reg0.ENA
+oneHz => result[25]~reg0.ENA
+oneHz => result[24]~reg0.ENA
+oneHz => result[23]~reg0.ENA
+oneHz => result[22]~reg0.ENA
+oneHz => result[21]~reg0.ENA
+oneHz => result[20]~reg0.ENA
+oneHz => result[19]~reg0.ENA
+oneHz => result[18]~reg0.ENA
+oneHz => result[17]~reg0.ENA
+oneHz => result[16]~reg0.ENA
+oneHz => result[15]~reg0.ENA
+oneHz => result[14]~reg0.ENA
+oneHz => result[13]~reg0.ENA
+oneHz => result[12]~reg0.ENA
+oneHz => result[11]~reg0.ENA
+oneHz => result[10]~reg0.ENA
+oneHz => result[9]~reg0.ENA
+oneHz => result[8]~reg0.ENA
+oneHz => result[7]~reg0.ENA
+oneHz => result[6]~reg0.ENA
+oneHz => result[5]~reg0.ENA
+oneHz => result[4]~reg0.ENA
+oneHz => result[3]~reg0.ENA
+oneHz => result[2]~reg0.ENA
+oneHz => result[1]~reg0.ENA
+oneHz => result[0]~reg0.ENA
+testSignal => toEdge[0].IN1
+result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= result[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= result[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= result[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= result[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= result[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= result[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= result[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= result[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[16] <= result[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[17] <= result[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[18] <= result[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[19] <= result[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[20] <= result[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[21] <= result[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[22] <= result[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[23] <= result[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[24] <= result[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[25] <= result[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[26] <= result[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[27] <= result[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[28] <= result[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[29] <= result[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[30] <= result[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[31] <= result[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|edge_detect:gen[0].edges
+clk => data_in_d2.CLK
+clk => data_in_d1.CLK
+rst_n => data_in_d2.ACLR
+rst_n => data_in_d1.ACLR
+data_in => data_in_d1.DATAIN
+pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:gen[0].count
+gclk => now[0]~reg0.CLK
+gclk => now[1]~reg0.CLK
+gclk => now[2]~reg0.CLK
+gclk => now[3]~reg0.CLK
+reset => now[0]~reg0.ACLR
+reset => now[1]~reg0.ACLR
+reset => now[2]~reg0.ACLR
+reset => now[3]~reg0.ACLR
+add => ~NO_FANOUT~
+now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|edge_detect:gen[1].edges
+clk => data_in_d2.CLK
+clk => data_in_d1.CLK
+rst_n => data_in_d2.ACLR
+rst_n => data_in_d1.ACLR
+data_in => data_in_d1.DATAIN
+pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:gen[1].count
+gclk => now[0]~reg0.CLK
+gclk => now[1]~reg0.CLK
+gclk => now[2]~reg0.CLK
+gclk => now[3]~reg0.CLK
+reset => now[0]~reg0.ACLR
+reset => now[1]~reg0.ACLR
+reset => now[2]~reg0.ACLR
+reset => now[3]~reg0.ACLR
+add => ~NO_FANOUT~
+now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|edge_detect:gen[2].edges
+clk => data_in_d2.CLK
+clk => data_in_d1.CLK
+rst_n => data_in_d2.ACLR
+rst_n => data_in_d1.ACLR
+data_in => data_in_d1.DATAIN
+pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:gen[2].count
+gclk => now[0]~reg0.CLK
+gclk => now[1]~reg0.CLK
+gclk => now[2]~reg0.CLK
+gclk => now[3]~reg0.CLK
+reset => now[0]~reg0.ACLR
+reset => now[1]~reg0.ACLR
+reset => now[2]~reg0.ACLR
+reset => now[3]~reg0.ACLR
+add => ~NO_FANOUT~
+now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|edge_detect:gen[3].edges
+clk => data_in_d2.CLK
+clk => data_in_d1.CLK
+rst_n => data_in_d2.ACLR
+rst_n => data_in_d1.ACLR
+data_in => data_in_d1.DATAIN
+pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:gen[3].count
+gclk => now[0]~reg0.CLK
+gclk => now[1]~reg0.CLK
+gclk => now[2]~reg0.CLK
+gclk => now[3]~reg0.CLK
+reset => now[0]~reg0.ACLR
+reset => now[1]~reg0.ACLR
+reset => now[2]~reg0.ACLR
+reset => now[3]~reg0.ACLR
+add => ~NO_FANOUT~
+now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|edge_detect:gen[4].edges
+clk => data_in_d2.CLK
+clk => data_in_d1.CLK
+rst_n => data_in_d2.ACLR
+rst_n => data_in_d1.ACLR
+data_in => data_in_d1.DATAIN
+pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:gen[4].count
+gclk => now[0]~reg0.CLK
+gclk => now[1]~reg0.CLK
+gclk => now[2]~reg0.CLK
+gclk => now[3]~reg0.CLK
+reset => now[0]~reg0.ACLR
+reset => now[1]~reg0.ACLR
+reset => now[2]~reg0.ACLR
+reset => now[3]~reg0.ACLR
+add => ~NO_FANOUT~
+now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|edge_detect:gen[5].edges
+clk => data_in_d2.CLK
+clk => data_in_d1.CLK
+rst_n => data_in_d2.ACLR
+rst_n => data_in_d1.ACLR
+data_in => data_in_d1.DATAIN
+pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:gen[5].count
+gclk => now[0]~reg0.CLK
+gclk => now[1]~reg0.CLK
+gclk => now[2]~reg0.CLK
+gclk => now[3]~reg0.CLK
+reset => now[0]~reg0.ACLR
+reset => now[1]~reg0.ACLR
+reset => now[2]~reg0.ACLR
+reset => now[3]~reg0.ACLR
+add => ~NO_FANOUT~
+now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[0].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[1].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[2].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[3].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[4].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[5].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[6].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|SEG_HEX:digits[7].digit
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oHEX_D[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oHEX_D[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

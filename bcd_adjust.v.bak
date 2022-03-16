@@ -1,0 +1,26 @@
+module bcd_adjust(
+	input clk,
+	input reset
+	input add, //very short
+	output reg [3:0] now,
+	output reg carry
+);
+	
+	always@(posedge clk,posedge reset)begin
+		if(reset) begin
+			now <= 4'b0;
+			carry <= 1'b0;
+		end
+		else begin
+			if(now < 4'd10)begin
+				now <= now + 4'd1;
+				carry <= 1'b0;
+			end
+			else begin
+				now <= 4'd0;
+				carry <= 1'b1;
+			end
+		end
+	end
+	
+endmodule

@@ -1,0 +1,29 @@
+module bcd_counter(
+	input clk,
+	input reset,
+	input add, //very short
+	output reg [3:0] now,
+	output reg carry
+);
+	//carry may be very short.
+	always@(posedge clk,posedge reset)begin
+		if(reset) begin
+			now <= 4'b0;
+			carry <= 1'b0;
+		end
+		else begin
+			if(add)begin
+				if(now < 9) now <= now + 4'b1;
+				else begin
+					now <= 4'b0;
+					carry <= 4'b1;
+				end
+			end
+			else begin
+				now <= now;
+				carry <= 4'b0;
+			end
+		end
+	end
+	
+endmodule

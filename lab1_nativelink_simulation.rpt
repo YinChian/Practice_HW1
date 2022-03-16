@@ -1,23 +1,72 @@
 Info: Start Nativelink Simulation process
-Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
 
 ========= EDA Simulation Settings =====================
 
-Sim Mode              :  RTL
+Sim Mode              :  Gate
 Family                :  cycloneive
 Quartus root          :  c:/intelfpga_lite/18.1/quartus/bin64/
 Quartus sim root      :  c:/intelfpga_lite/18.1/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
 Simulation Language   :  verilog
 Simulation Mode       :  GUI
-Sim Output File       :  
-Sim SDF file          :  
+Sim Output File       :  lab1.vo
+Sim SDF file          :  lab1__verilog.sdo
 Sim dir               :  simulation\modelsim
 
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File lab1_run_msim_rtl_verilog.do already exists - backing up current file as lab1_run_msim_rtl_verilog.do.bak
-Info: Spawning ModelSim-Altera Simulation software 
+Probing transcript
+ModelSim-Altera Info: # Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+ModelSim-Altera Info: # do lab1_run_msim_gate_verilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {lab1.vo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 03:19:03 on Mar 17,2022
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." lab1.vo 
+ModelSim-Altera Info: # -- Compiling module lab1
+ModelSim-Altera Info: # -- Compiling module hard_block
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	lab1
+ModelSim-Altera Info: # End time: 03:19:03 on Mar 17,2022, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 03:19:03 on Mar 17,2022
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v 
+ModelSim-Altera Info: # -- Compiling module lab1_tb
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	lab1_tb
+ModelSim-Altera Info: # End time: 03:19:03 on Mar 17,2022, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  lab1_tb
+ModelSim-Altera Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" lab1_tb 
+ModelSim-Altera Info: # Start time: 03:19:04 on Mar 17,2022
+ModelSim-Altera Info: # Loading work.lab1_tb
+ModelSim-Altera Info: # Loading work.lab1
+ModelSim-Altera Info: # Loading work.hard_block
+ModelSim-Altera Info: # Loading cycloneive_ver.cycloneive_io_obuf
+ModelSim-Altera Info: # Loading cycloneive_ver.cycloneive_io_ibuf
+ModelSim-Altera Info: # SDF 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Loading instances from lab1_v.sdo
+ModelSim-Altera Info: # Loading timing data from lab1_v.sdo
+ModelSim-Altera Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /lab1_tb File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v
+ModelSim-Altera Info: # End time: 03:19:12 on Mar 17,2022, Elapsed time: 0:00:08
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
 Info: NativeLink simulation flow was successful
