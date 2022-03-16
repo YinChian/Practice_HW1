@@ -1,0 +1,8 @@
+module Clock_Counter(
+	input oneHz,
+	input reset,
+	input testSignal,
+	output reg [6:0]
+);
+	
+endmodule
