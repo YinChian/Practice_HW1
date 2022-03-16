@@ -2,14 +2,14 @@ module lab1(
 	input SMA_CLKIN,
 	input [3:0] KEY,
 	input CLOCK_50,
-	output reg [6:0] HEX0,
-	output reg [6:0] HEX1,
-	output reg [6:0] HEX2,
-	output reg [6:0] HEX3,
-	output reg [6:0] HEX4,
-	output reg [6:0] HEX5,
-	output reg [6:0] HEX6,
-	output reg [6:0] HEX7
+	output [6:0] HEX0,
+	output [6:0] HEX1,
+	output [6:0] HEX2,
+	output [6:0] HEX3,
+	output [6:0] HEX4,
+	output [6:0] HEX5,
+	output [6:0] HEX6,
+	output [6:0] HEX7
 );
 	wire reset = KEY[0];
 	
@@ -21,13 +21,14 @@ module lab1(
 	wire [31:0] result;
 	Clock_Counter u3(CLOCK_50,reset,oneHz,SMA_CLKIN,result);
 	
-	wire [55:0] out = {HEX7,HEX6,HEX5,HEX4,HEX3,HEX2,HEX1,HEX0};
+	SEG_HEX digit0(result[3 :0 ],HEX0);
+	SEG_HEX digit1(result[7 :4 ],HEX1);
+	SEG_HEX digit2(result[11:8 ],HEX2);
+	SEG_HEX digit3(result[15:12],HEX3);
+	SEG_HEX digit4(result[19:16],HEX4);
+	SEG_HEX digit5(result[23:20],HEX5);
+	SEG_HEX digit6(result[27:24],HEX6);
+	SEG_HEX digit7(result[31:28],HEX7);
 	
-	genvar i;
-	generate
-		for(i = 0 ; i < 8 ; i = i + 1)begin : digits
-			SEG_HEX digit(result[i*4+:4],out[i*7+:7]);
-		end
-	endgenerate
 
 endmodule

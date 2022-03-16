@@ -20,9 +20,9 @@ module Clock_Counter(
 	assign toEdge[0] = testSignal; 
 	genvar i;
 	generate
-		for(i = 0 ; i < 6 ; i = i + 1)begin : gen
+		for(i = 0 ; i < 8 ; i = i + 1)begin : gen
 			edge_detect edges(CLOCK_50,reset,toEdge[i],,edged[i]);
-			bcd_counter count(CLOCK_50,reset,edged[i],buffer[i*4+:4]);
+			bcd_counter count(CLOCK_50,reset,oneHz,edged[i],buffer[i*4+:4]);
 			assign toEdge[i+1] = buffer[i*4+3];
 		end
 	endgenerate

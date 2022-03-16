@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dD:/Digital_Logic_Design/Pratice/Homework 1/simulation/modelsim
 vhard_block
-Z1 !s110 1647458343
+Z1 !s110 1647460815
 !i10b 1
-!s100 ;z0mdJD;jK0HJo;SVhoA02
-I20=3?L;[PXVO[BgAoVQWN0
+!s100 [30c]eV>J7Jf<TFLL;]C11
+IdC7UL@jX;T^[Ail^JDJke2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1647458322
+Z3 w1647460802
 Z4 8lab1.vo
 Z5 Flab1.vo
-L0 1106
+L0 2863
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1647458343.000000
+Z7 !s108 1647460815.000000
 Z8 !s107 lab1.vo|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|lab1.vo|
 !i113 1
@@ -33,8 +33,8 @@ Z12 tCvgOpt 0
 vlab1
 R1
 !i10b 1
-!s100 KPB13[[4d4d7PidEz11?_1
-IT<z@^mf@]8dC4=HT]_PTI1
+!s100 J4ISVH:TD^SmUd1njCa;73
+IXBb0cZ5n49H87N>]1zUTS1
 R2
 R0
 R3
