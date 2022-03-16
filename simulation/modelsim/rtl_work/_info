@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Digital_Logic_Design/practice/hw1/simulation/modelsim
+vlab1
+Z1 !s110 1647434180
+!i10b 1
+!s100 fR6TOe^ATdYii8Un6K:R`3
+IlAW1SIVmi[2eJ9RNG8IiA0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1647433981
+8D:/Digital_Logic_Design/practice/hw1/lab1.v
+FD:/Digital_Logic_Design/practice/hw1/lab1.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1647434180.000000
+!s107 D:/Digital_Logic_Design/practice/hw1/lab1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/practice/hw1|D:/Digital_Logic_Design/practice/hw1/lab1.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Digital_Logic_Design/practice/hw1
+Z7 tCvgOpt 0
+vlab1_tb
+R1
+!i10b 1
+!s100 @0a3=[K[8Idl>QO1JD[n51
+Ikk1A1UfHj@R]L@T=WZOja3
+R2
+R0
+w1647433116
+8D:/Digital_Logic_Design/practice/hw1/lab1_tb.v
+FD:/Digital_Logic_Design/practice/hw1/lab1_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Digital_Logic_Design/practice/hw1/lab1_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/practice/hw1|D:/Digital_Logic_Design/practice/hw1/lab1_tb.v|
+!i113 1
+R5
+R6
+R7
