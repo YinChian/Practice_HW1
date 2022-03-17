@@ -16,6 +16,10 @@ wire [6:0] hex5;
 wire [6:0] hex6;
 wire [6:0] hex7;
 
+wire[3:0] now;
+wire carry;
+
+
 lab1 u1(
                 //////// CLOCK //////////
                 .CLOCK_50(clk_50M),
@@ -33,6 +37,14 @@ lab1 u1(
                 .SMA_CLKIN(clk_sma)
                                
         );  
+		  
+bcd_counter u2(
+	.gclk(clk_50M),
+	.reset(key[0]),
+	.add(clk_sma),
+	.now(now),
+	.carry(carry),
+);
 
 always
   #10 clk_50M = ~clk_50M;

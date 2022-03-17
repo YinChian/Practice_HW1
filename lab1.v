@@ -9,12 +9,13 @@ module lab1(
 	output [6:0] HEX4,
 	output [6:0] HEX5,
 	output [6:0] HEX6,
-	output [6:0] HEX7
+	output [6:0] HEX7,
+	output oneHz
 );
 	wire reset = KEY[0];
 	
 	
-	wire oneHz;
+	//wire oneHz;
 	mod_1sec u1(CLOCK_50,reset,oneHz);
 	
 	

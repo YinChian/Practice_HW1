@@ -1,3 +1,5 @@
+`timescale 1ns/1ns
+
 module Clock_Counter(
 	input CLOCK_50,
 	input reset,
@@ -9,21 +11,20 @@ module Clock_Counter(
 	wire [31:0] buffer;
 	reg add;
 	
-	always@(posedge CLOCK_50,posedge reset)begin //result
-		if(reset) result <= 32'd0;
-		else if(oneHz) result <= buffer;
-		else result <= result;
+	always@(posedge CLOCK_50,negedge reset)begin //result
+		if(!reset) result <=#1 32'd0;
+		else if(oneHz) result <=#1 buffer;
+		else result <=#1 result;
 	end
 	
-	wire [7:0] edged;
-	wire [8:0] toEdge;
-	assign toEdge[0] = testSignal; 
+	
+	wire [8:0] carry;
+	assign carry[0] = testSignal;
+	
 	genvar i;
-	generate
-		for(i = 0 ; i < 7 ; i = i + 1)begin : gen
-			edge_detect edges(CLOCK_50,reset,toEdge[i],,edged[i]);
-			bcd_counter count(CLOCK_50,reset,oneHz,edged[i],buffer[i*4+:4]);
-			assign toEdge[i+1] = buffer[i*4+3];
+	generate 
+		for(i = 0 ; i <= 7 ; i = i + 1)begin :Generate_BCD_Counters
+			bcd_counter instances(CLOCK_50,reset,oneHz,carry[i],buffer[4*i+:4],carry[i+1]);
 		end
 	endgenerate
 	

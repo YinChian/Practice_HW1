@@ -61,6 +61,7 @@ HEX7[3] << SEG_HEX:digit7.port1
 HEX7[4] << SEG_HEX:digit7.port1
 HEX7[5] << SEG_HEX:digit7.port1
 HEX7[6] << SEG_HEX:digit7.port1
+oneHz << oneHz.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab1|mod_1sec:u1
@@ -120,10 +121,10 @@ oneHz <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab1|Clock_Counter:u3
-CLOCK_50 => CLOCK_50.IN14
-reset => reset.IN14
-oneHz => oneHz.IN7
-testSignal => toEdge[0].IN1
+CLOCK_50 => CLOCK_50.IN8
+reset => reset.IN8
+oneHz => oneHz.IN8
+testSignal => carry[0].IN1
 result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -158,17 +159,7 @@ result[30] <= result[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= result[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|edge_detect:gen[0].edges
-clk => data_in_d2.CLK
-clk => data_in_d1.CLK
-rst_n => data_in_d2.ACLR
-rst_n => data_in_d1.ACLR
-data_in => data_in_d1.DATAIN
-pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
-neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab1|Clock_Counter:u3|bcd_counter:gen[0].count
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances
 gclk => gclk.IN1
 reset => reset.IN1
 oneHz => now.OUTPUTSELECT
@@ -180,9 +171,10 @@ now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|bcd_counter:gen[0].count|edge_detect:falling_edge
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge
 clk => data_in_d2.CLK
 clk => data_in_d1.CLK
 rst_n => data_in_d2.ACLR
@@ -192,17 +184,7 @@ pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
 neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|edge_detect:gen[1].edges
-clk => data_in_d2.CLK
-clk => data_in_d1.CLK
-rst_n => data_in_d2.ACLR
-rst_n => data_in_d1.ACLR
-data_in => data_in_d1.DATAIN
-pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
-neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab1|Clock_Counter:u3|bcd_counter:gen[1].count
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances
 gclk => gclk.IN1
 reset => reset.IN1
 oneHz => now.OUTPUTSELECT
@@ -214,9 +196,10 @@ now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|bcd_counter:gen[1].count|edge_detect:falling_edge
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances|edge_detect:falling_edge
 clk => data_in_d2.CLK
 clk => data_in_d1.CLK
 rst_n => data_in_d2.ACLR
@@ -226,17 +209,7 @@ pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
 neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|edge_detect:gen[2].edges
-clk => data_in_d2.CLK
-clk => data_in_d1.CLK
-rst_n => data_in_d2.ACLR
-rst_n => data_in_d1.ACLR
-data_in => data_in_d1.DATAIN
-pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
-neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab1|Clock_Counter:u3|bcd_counter:gen[2].count
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances
 gclk => gclk.IN1
 reset => reset.IN1
 oneHz => now.OUTPUTSELECT
@@ -248,9 +221,10 @@ now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|bcd_counter:gen[2].count|edge_detect:falling_edge
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances|edge_detect:falling_edge
 clk => data_in_d2.CLK
 clk => data_in_d1.CLK
 rst_n => data_in_d2.ACLR
@@ -260,17 +234,7 @@ pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
 neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|edge_detect:gen[3].edges
-clk => data_in_d2.CLK
-clk => data_in_d1.CLK
-rst_n => data_in_d2.ACLR
-rst_n => data_in_d1.ACLR
-data_in => data_in_d1.DATAIN
-pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
-neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab1|Clock_Counter:u3|bcd_counter:gen[3].count
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances
 gclk => gclk.IN1
 reset => reset.IN1
 oneHz => now.OUTPUTSELECT
@@ -282,9 +246,10 @@ now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|bcd_counter:gen[3].count|edge_detect:falling_edge
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances|edge_detect:falling_edge
 clk => data_in_d2.CLK
 clk => data_in_d1.CLK
 rst_n => data_in_d2.ACLR
@@ -294,17 +259,7 @@ pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
 neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|edge_detect:gen[4].edges
-clk => data_in_d2.CLK
-clk => data_in_d1.CLK
-rst_n => data_in_d2.ACLR
-rst_n => data_in_d1.ACLR
-data_in => data_in_d1.DATAIN
-pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
-neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab1|Clock_Counter:u3|bcd_counter:gen[4].count
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances
 gclk => gclk.IN1
 reset => reset.IN1
 oneHz => now.OUTPUTSELECT
@@ -316,9 +271,10 @@ now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|bcd_counter:gen[4].count|edge_detect:falling_edge
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances|edge_detect:falling_edge
 clk => data_in_d2.CLK
 clk => data_in_d1.CLK
 rst_n => data_in_d2.ACLR
@@ -328,17 +284,7 @@ pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
 neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|edge_detect:gen[5].edges
-clk => data_in_d2.CLK
-clk => data_in_d1.CLK
-rst_n => data_in_d2.ACLR
-rst_n => data_in_d1.ACLR
-data_in => data_in_d1.DATAIN
-pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
-neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab1|Clock_Counter:u3|bcd_counter:gen[5].count
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances
 gclk => gclk.IN1
 reset => reset.IN1
 oneHz => now.OUTPUTSELECT
@@ -350,9 +296,10 @@ now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|bcd_counter:gen[5].count|edge_detect:falling_edge
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances|edge_detect:falling_edge
 clk => data_in_d2.CLK
 clk => data_in_d1.CLK
 rst_n => data_in_d2.ACLR
@@ -362,17 +309,7 @@ pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
 neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|edge_detect:gen[6].edges
-clk => data_in_d2.CLK
-clk => data_in_d1.CLK
-rst_n => data_in_d2.ACLR
-rst_n => data_in_d1.ACLR
-data_in => data_in_d1.DATAIN
-pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
-neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|lab1|Clock_Counter:u3|bcd_counter:gen[6].count
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances
 gclk => gclk.IN1
 reset => reset.IN1
 oneHz => now.OUTPUTSELECT
@@ -384,9 +321,35 @@ now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab1|Clock_Counter:u3|bcd_counter:gen[6].count|edge_detect:falling_edge
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances|edge_detect:falling_edge
+clk => data_in_d2.CLK
+clk => data_in_d1.CLK
+rst_n => data_in_d2.ACLR
+rst_n => data_in_d1.ACLR
+data_in => data_in_d1.DATAIN
+pos_edge <= pos_edge.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances
+gclk => gclk.IN1
+reset => reset.IN1
+oneHz => now.OUTPUTSELECT
+oneHz => now.OUTPUTSELECT
+oneHz => now.OUTPUTSELECT
+oneHz => now.OUTPUTSELECT
+add => add.IN1
+now[0] <= now[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances|edge_detect:falling_edge
 clk => data_in_d2.CLK
 clk => data_in_d1.CLK
 rst_n => data_in_d2.ACLR

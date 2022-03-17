@@ -9,138 +9,138 @@ z2
 cModel Technology
 Z0 dD:/Digital_Logic_Design/Pratice/Homework 1/simulation/modelsim
 vbcd_counter
-Z1 !s110 1647496667
+Z1 !s110 1647522559
 !i10b 1
-!s100 H6?cKGHQo84XYkfVD2KPV2
-IXLzo3oKKKzX<Q0]@MX0eP0
+!s100 :O;M`U8O7WijIf?Da2<V02
+InPnU1Vbo6glnWPG>fK3C13
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1647496611
+Z3 w1647519867
 8D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v
-L0 1
-Z3 OV;L;10.5b;63
+L0 3
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1647496667.000000
+Z5 !s108 1647522559.000000
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v|
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work {+incdir+D:/Digital_Logic_Design/Pratice/Homework 1}
-Z7 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+D:/Digital_Logic_Design/Pratice/Homework 1}
+Z8 tCvgOpt 0
 vClock_Counter
-Z8 !s110 1647496668
+R1
 !i10b 1
-!s100 FiYMlCG=bH4fmGmaQ>Yho2
-IMW=]beakiD;>ZzJ3WT:Nj1
+!s100 dz5UPLUENXOG]>aR1beE93
+IhQbA`[CA`d3>D?a=ENSz_2
 R2
 R0
-w1647495708
+R3
 8D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-Z9 !s108 1647496668.000000
+R5
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v|
 !i113 1
-R5
 R6
 R7
+R8
 n@clock_@counter
 vedge_detect
 R1
 !i10b 1
-!s100 4iOCQHE9?0lZ[R3_e;@<F3
-I7>=N4_YWek?R>1NdG?<`11
+!s100 4gcD@dCnd<o99[hE]RmB22
+I=6Dz0[UGb]XzQgdY_9CEc0
 R2
 R0
-w1647495839
+w1647496879
 8D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v|
 !i113 1
-R5
 R6
 R7
-vlab1
 R8
+vlab1
+R1
 !i10b 1
-!s100 ;6l>b;e;R^L:HcdCQ=Ge>2
-IUgHZBTS5M=jQC=:BV0KkJ0
+!s100 an=f06gP=Cn7zeK4J13P82
+IV3lE_Qk[ADFOiKl0:Y>f22
 R2
 R0
-w1647458679
+w1647519512
 8D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/lab1.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v|
 !i113 1
-R5
 R6
 R7
-vlab1_tb
 R8
+vlab1_tb
+R1
 !i10b 1
-!s100 @0a3=[K[8Idl>QO1JD[n51
-Inz@kfUzhMkOE_D]aoSEF82
+!s100 Rlb:8MNmY0dF^?8XdOOQ=1
+Iz2Qf8fiCL:iWD0T3_0AXO2
 R2
 R0
-w1647455748
+w1647520505
 8D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v|
 !i113 1
-R5
 R6
 R7
-vmod_1sec
 R8
+vmod_1sec
+R1
 !i10b 1
-!s100 9elJ@b`gQ5aNHn3GkLX;c0
-I?7SH]T13HdAG?4dUgbEcK0
+!s100 SgDMK7=a1]oLBD=>CJ8d32
+IRaO18W<PmCKV``g:J;n:P2
 R2
 R0
-w1647458958
+w1647520139
 8D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v|
 !i113 1
-R5
 R6
 R7
+R8
 vSEG_HEX
 R1
 !i10b 1
@@ -152,15 +152,15 @@ w1647430599
 8D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v
 L0 44
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v|
 !i113 1
-R5
 R6
 R7
+R8
 n@s@e@g_@h@e@x
