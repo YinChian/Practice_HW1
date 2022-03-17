@@ -6,11 +6,23 @@ module bcd_counter(
 	output reg [3:0] now
 );
 	
-	wire [3:0] next_now = (reset || oneHz)?(now < 9)?now+4'h1:4'h0:4'h0;
+	
+	wire tick;
+	edge_detect falling_edge(gclk,reset,add,,tick);
+	
+	/*wire [3:0] next;
+	assign next = (reset | oneHz) ? 4'h0 :
+					  (!tick) 			? now  :
+					  (now > 9) 		? 4'h0 :
+					  now + 4'd1		;
+				*/	  
 	always@(posedge gclk,posedge reset)begin
 		if(reset) now <= 4'h0;
-		else now <= next_now;
-		
+		else if(oneHz) now <= 4'h0;
+		else if(tick)begin
+			if(now > 4'h9) now <= now + 4'h9;
+			else now <= 4'h0;
+		end
 	end
 	
 endmodule

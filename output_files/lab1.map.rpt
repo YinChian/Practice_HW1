@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab1
-Thu Mar 17 03:59:33 2022
+Thu Mar 17 14:01:47 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,18 +14,20 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[6].edges"
- 12. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[5].edges"
- 13. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[4].edges"
- 14. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[3].edges"
- 15. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[2].edges"
- 16. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[1].edges"
- 17. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[0].edges"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[6].edges"
+ 13. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[5].edges"
+ 14. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[4].edges"
+ 15. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[3].edges"
+ 16. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[2].edges"
+ 17. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[1].edges"
+ 18. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:gen[0].count|edge_detect:falling_edge"
+ 19. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[0].edges"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -51,15 +53,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 17 03:59:33 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 17 14:01:47 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 60                                          ;
-;     Total combinational functions  ; 56                                          ;
-;     Dedicated logic registers      ; 34                                          ;
-; Total registers                    ; 34                                          ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
 ; Total pins                         ; 62                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -163,11 +165,10 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -185,88 +186,170 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 60           ;
-;                                             ;              ;
-; Total combinational functions               ; 56           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 21           ;
-;     -- 3 input functions                    ; 8            ;
-;     -- <=2 input functions                  ; 27           ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 31           ;
-;     -- arithmetic mode                      ; 25           ;
-;                                             ;              ;
-; Total registers                             ; 34           ;
-;     -- Dedicated logic registers            ; 34           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 62           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 37           ;
-; Total fan-out                               ; 378          ;
-; Average fan-out                             ; 1.77         ;
-+---------------------------------------------+--------------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+;                                             ;        ;
+; Total combinational functions               ; 0      ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 0      ;
+;     -- 3 input functions                    ; 0      ;
+;     -- <=2 input functions                  ; 0      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 0      ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 62     ;
+;                                             ;        ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+;                                             ;        ;
+; Maximum fan-out node                        ; KEY[1] ;
+; Maximum fan-out                             ; 1      ;
+; Total fan-out                               ; 62     ;
+; Average fan-out                             ; 0.50   ;
++---------------------------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                          ;
-+----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name   ; Library Name ;
-+----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+---------------+--------------+
-; |lab1                            ; 56 (0)              ; 34 (0)                    ; 0           ; 0            ; 0       ; 0         ; 62   ; 0            ; |lab1                                           ; lab1          ; work         ;
-;    |Clock_Counter:u3|            ; 7 (0)               ; 8 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3                          ; Clock_Counter ; work         ;
-;       |bcd_counter:gen[0].count| ; 7 (7)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:gen[0].count ; bcd_counter   ; work         ;
-;    |SEG_HEX:digit0|              ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit0                            ; SEG_HEX       ; work         ;
-;    |mod_1sec:u1|                 ; 42 (42)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|mod_1sec:u1                               ; mod_1sec      ; work         ;
-+----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+---------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |lab1                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 62   ; 0            ; |lab1               ; lab1        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                              ;
-+--------------------------------------------------+--------------------------------------------------------------+
-; Register name                                    ; Reason for Removal                                           ;
-+--------------------------------------------------+--------------------------------------------------------------+
-; Clock_Counter:u3|result[28..31]                  ; Stuck at GND due to stuck port data_in                       ;
-; Clock_Counter:u3|result[3,7,15,19,23,27]         ; Merged with Clock_Counter:u3|result[11]                      ;
-; Clock_Counter:u3|result[2,6,14,18,22,26]         ; Merged with Clock_Counter:u3|result[10]                      ;
-; Clock_Counter:u3|result[1,5,9,17,21,25]          ; Merged with Clock_Counter:u3|result[13]                      ;
-; Clock_Counter:u3|result[4,8,12,16,20,24]         ; Merged with Clock_Counter:u3|result[0]                       ;
-; Clock_Counter:u3|bcd_counter:gen[1].count|now[3] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
-; Clock_Counter:u3|bcd_counter:gen[2].count|now[3] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
-; Clock_Counter:u3|bcd_counter:gen[3].count|now[3] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
-; Clock_Counter:u3|bcd_counter:gen[4].count|now[3] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
-; Clock_Counter:u3|bcd_counter:gen[5].count|now[3] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
-; Clock_Counter:u3|bcd_counter:gen[6].count|now[3] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
-; Clock_Counter:u3|bcd_counter:gen[1].count|now[2] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[2] ;
-; Clock_Counter:u3|bcd_counter:gen[2].count|now[2] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[2] ;
-; Clock_Counter:u3|bcd_counter:gen[3].count|now[2] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[2] ;
-; Clock_Counter:u3|bcd_counter:gen[4].count|now[2] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[2] ;
-; Clock_Counter:u3|bcd_counter:gen[5].count|now[2] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[2] ;
-; Clock_Counter:u3|bcd_counter:gen[6].count|now[2] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[2] ;
-; Clock_Counter:u3|bcd_counter:gen[1].count|now[1] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[1] ;
-; Clock_Counter:u3|bcd_counter:gen[2].count|now[1] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[1] ;
-; Clock_Counter:u3|bcd_counter:gen[3].count|now[1] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[1] ;
-; Clock_Counter:u3|bcd_counter:gen[4].count|now[1] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[1] ;
-; Clock_Counter:u3|bcd_counter:gen[5].count|now[1] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[1] ;
-; Clock_Counter:u3|bcd_counter:gen[6].count|now[1] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[1] ;
-; Clock_Counter:u3|bcd_counter:gen[1].count|now[0] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[0] ;
-; Clock_Counter:u3|bcd_counter:gen[2].count|now[0] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[0] ;
-; Clock_Counter:u3|bcd_counter:gen[3].count|now[0] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[0] ;
-; Clock_Counter:u3|bcd_counter:gen[4].count|now[0] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[0] ;
-; Clock_Counter:u3|bcd_counter:gen[5].count|now[0] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[0] ;
-; Clock_Counter:u3|bcd_counter:gen[6].count|now[0] ; Merged with Clock_Counter:u3|bcd_counter:gen[0].count|now[0] ;
-; Total Number of Removed Registers = 52           ;                                                              ;
-+--------------------------------------------------+--------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                     ;
++-------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                 ; Reason for Removal                     ;
++-------------------------------------------------------------------------------+----------------------------------------+
+; Clock_Counter:u3|result[28..31]                                               ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[0].count|now[3]                              ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[1].count|now[3]                              ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[2].count|now[3]                              ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[3].count|now[3]                              ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[4].count|now[3]                              ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[5].count|now[3]                              ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[6].count|now[3]                              ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|edge_detect:gen[1].edges|data_in_d1                          ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|edge_detect:gen[2].edges|data_in_d1                          ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|edge_detect:gen[3].edges|data_in_d1                          ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|edge_detect:gen[4].edges|data_in_d1                          ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|edge_detect:gen[5].edges|data_in_d1                          ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|edge_detect:gen[6].edges|data_in_d1                          ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|result[3,7,11,15,19,23,27]                                   ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[0].count|now[0..2]                           ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[0].count|edge_detect:falling_edge|data_in_d2 ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[0].count|edge_detect:falling_edge|data_in_d1 ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[0].edges|data_in_d2                          ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[0].edges|data_in_d1                          ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[1].count|now[0..2]                           ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[1].count|edge_detect:falling_edge|data_in_d2 ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[1].count|edge_detect:falling_edge|data_in_d1 ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[1].edges|data_in_d2                          ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[2].count|now[0..2]                           ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[2].count|edge_detect:falling_edge|data_in_d2 ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[2].count|edge_detect:falling_edge|data_in_d1 ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[2].edges|data_in_d2                          ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[3].count|now[0..2]                           ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[3].count|edge_detect:falling_edge|data_in_d2 ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[3].count|edge_detect:falling_edge|data_in_d1 ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[3].edges|data_in_d2                          ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[4].count|now[0..2]                           ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[4].count|edge_detect:falling_edge|data_in_d2 ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[4].count|edge_detect:falling_edge|data_in_d1 ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[4].edges|data_in_d2                          ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[5].count|now[0..2]                           ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[5].count|edge_detect:falling_edge|data_in_d2 ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[5].count|edge_detect:falling_edge|data_in_d1 ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[5].edges|data_in_d2                          ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[6].count|now[0..2]                           ; Stuck at GND due to stuck port data_in ;
+; Clock_Counter:u3|bcd_counter:gen[6].count|edge_detect:falling_edge|data_in_d2 ; Lost fanout                            ;
+; Clock_Counter:u3|bcd_counter:gen[6].count|edge_detect:falling_edge|data_in_d1 ; Lost fanout                            ;
+; Clock_Counter:u3|edge_detect:gen[6].edges|data_in_d2                          ; Lost fanout                            ;
+; Clock_Counter:u3|result[0..2,4..6,8..10,12..14,16..18,20..22,24..26]          ; Stuck at GND due to stuck port data_in ;
+; mod_1sec:u1|counter[0..25]                                                    ; Lost fanout                            ;
+; Total Number of Removed Registers = 114                                       ;                                        ;
++-------------------------------------------------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                       ;
++--------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; Register name                                    ; Reason for Removal        ; Registers Removed due to This Register                                             ;
++--------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
+; Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ; Stuck at GND              ; Clock_Counter:u3|edge_detect:gen[1].edges|data_in_d1, Clock_Counter:u3|result[3],  ;
+;                                                  ; due to stuck port data_in ; Clock_Counter:u3|bcd_counter:gen[0].count|now[0],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[0].count|now[1],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[0].count|now[2],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[0].count|edge_detect:falling_edge|data_in_d2,     ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[0].count|edge_detect:falling_edge|data_in_d1,     ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[0].edges|data_in_d2,                              ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[0].edges|data_in_d1, Clock_Counter:u3|result[0],  ;
+;                                                  ;                           ; Clock_Counter:u3|result[1], Clock_Counter:u3|result[2], mod_1sec:u1|counter[22],   ;
+;                                                  ;                           ; mod_1sec:u1|counter[21], mod_1sec:u1|counter[20], mod_1sec:u1|counter[19],         ;
+;                                                  ;                           ; mod_1sec:u1|counter[18], mod_1sec:u1|counter[17]                                   ;
+; Clock_Counter:u3|result[31]                      ; Stuck at GND              ; mod_1sec:u1|counter[25], mod_1sec:u1|counter[24], mod_1sec:u1|counter[23],         ;
+;                                                  ; due to stuck port data_in ; mod_1sec:u1|counter[8], mod_1sec:u1|counter[7], mod_1sec:u1|counter[6],            ;
+;                                                  ;                           ; mod_1sec:u1|counter[5], mod_1sec:u1|counter[4], mod_1sec:u1|counter[3],            ;
+;                                                  ;                           ; mod_1sec:u1|counter[2], mod_1sec:u1|counter[1], mod_1sec:u1|counter[0]             ;
+; Clock_Counter:u3|bcd_counter:gen[1].count|now[3] ; Stuck at GND              ; Clock_Counter:u3|edge_detect:gen[2].edges|data_in_d1, Clock_Counter:u3|result[7],  ;
+;                                                  ; due to stuck port data_in ; Clock_Counter:u3|bcd_counter:gen[1].count|now[0],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[1].count|now[1],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[1].count|now[2],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[1].count|edge_detect:falling_edge|data_in_d2,     ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[1].count|edge_detect:falling_edge|data_in_d1,     ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[1].edges|data_in_d2, Clock_Counter:u3|result[4],  ;
+;                                                  ;                           ; Clock_Counter:u3|result[5], Clock_Counter:u3|result[6]                             ;
+; Clock_Counter:u3|bcd_counter:gen[2].count|now[3] ; Stuck at GND              ; Clock_Counter:u3|edge_detect:gen[3].edges|data_in_d1, Clock_Counter:u3|result[11], ;
+;                                                  ; due to stuck port data_in ; Clock_Counter:u3|bcd_counter:gen[2].count|now[0],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[2].count|now[1],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[2].count|now[2],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[2].count|edge_detect:falling_edge|data_in_d2,     ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[2].count|edge_detect:falling_edge|data_in_d1,     ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[2].edges|data_in_d2, Clock_Counter:u3|result[8],  ;
+;                                                  ;                           ; Clock_Counter:u3|result[9], Clock_Counter:u3|result[10]                            ;
+; Clock_Counter:u3|bcd_counter:gen[3].count|now[3] ; Stuck at GND              ; Clock_Counter:u3|edge_detect:gen[4].edges|data_in_d1, Clock_Counter:u3|result[15], ;
+;                                                  ; due to stuck port data_in ; Clock_Counter:u3|bcd_counter:gen[3].count|now[0],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[3].count|now[1],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[3].count|now[2],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[3].count|edge_detect:falling_edge|data_in_d2,     ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[3].count|edge_detect:falling_edge|data_in_d1,     ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[3].edges|data_in_d2, Clock_Counter:u3|result[12], ;
+;                                                  ;                           ; Clock_Counter:u3|result[13], Clock_Counter:u3|result[14]                           ;
+; Clock_Counter:u3|bcd_counter:gen[4].count|now[3] ; Stuck at GND              ; Clock_Counter:u3|edge_detect:gen[5].edges|data_in_d1, Clock_Counter:u3|result[19], ;
+;                                                  ; due to stuck port data_in ; Clock_Counter:u3|bcd_counter:gen[4].count|now[0],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[4].count|now[1],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[4].count|now[2],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[4].count|edge_detect:falling_edge|data_in_d2,     ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[4].count|edge_detect:falling_edge|data_in_d1,     ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[4].edges|data_in_d2, Clock_Counter:u3|result[16], ;
+;                                                  ;                           ; Clock_Counter:u3|result[17], Clock_Counter:u3|result[18]                           ;
+; Clock_Counter:u3|bcd_counter:gen[5].count|now[3] ; Stuck at GND              ; Clock_Counter:u3|edge_detect:gen[6].edges|data_in_d1, Clock_Counter:u3|result[23], ;
+;                                                  ; due to stuck port data_in ; Clock_Counter:u3|bcd_counter:gen[5].count|now[0],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[5].count|now[1],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[5].count|now[2],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[5].count|edge_detect:falling_edge|data_in_d2,     ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[5].count|edge_detect:falling_edge|data_in_d1,     ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[5].edges|data_in_d2, Clock_Counter:u3|result[20], ;
+;                                                  ;                           ; Clock_Counter:u3|result[21], Clock_Counter:u3|result[22]                           ;
+; Clock_Counter:u3|bcd_counter:gen[6].count|now[3] ; Stuck at GND              ; Clock_Counter:u3|result[27], Clock_Counter:u3|bcd_counter:gen[6].count|now[0],     ;
+;                                                  ; due to stuck port data_in ; Clock_Counter:u3|bcd_counter:gen[6].count|now[1],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[6].count|now[2],                                  ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[6].count|edge_detect:falling_edge|data_in_d2,     ;
+;                                                  ;                           ; Clock_Counter:u3|bcd_counter:gen[6].count|edge_detect:falling_edge|data_in_d1,     ;
+;                                                  ;                           ; Clock_Counter:u3|edge_detect:gen[6].edges|data_in_d2, Clock_Counter:u3|result[24], ;
+;                                                  ;                           ; Clock_Counter:u3|result[25], Clock_Counter:u3|result[26]                           ;
++--------------------------------------------------+---------------------------+------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -274,12 +357,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 34    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 34    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -289,7 +372,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[0].count|now[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[1].count|now[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[2].count|now[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[3].count|now[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[4].count|now[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[5].count|now[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:gen[6].count|now[3] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
@@ -347,6 +436,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+--------+----------+----------------------------------------+
 
 
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:gen[0].count|edge_detect:falling_edge" ;
++----------+--------+----------+-----------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                         ;
++----------+--------+----------+-----------------------------------------------------------------+
+; pos_edge ; Output ; Info     ; Explicitly unconnected                                          ;
++----------+--------+----------+-----------------------------------------------------------------+
+
+
 +-----------------------------------------------------------------------+
 ; Port Connectivity Checks: "Clock_Counter:u3|edge_detect:gen[0].edges" ;
 +----------+--------+----------+----------------------------------------+
@@ -362,21 +460,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 62                          ;
-; cycloneiii_ff         ; 34                          ;
-;     CLR               ; 30                          ;
-;     ENA CLR           ; 4                           ;
-; cycloneiii_lcell_comb ; 59                          ;
-;     arith             ; 25                          ;
-;         2 data inputs ; 25                          ;
-;     normal            ; 34                          ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 21                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.08                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -395,7 +484,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Mar 17 03:59:22 2022
+    Info: Processing started: Thu Mar 17 14:01:21 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -406,23 +495,70 @@ Info (12021): Found 1 design units, including 1 entities, in source file seg_hex
 Info (12021): Found 1 design units, including 1 entities, in source file lab1_tb.v
     Info (12023): Found entity 1: lab1_tb File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file edge_detect.v
-    Info (12023): Found entity 1: edge_detect File: D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v Line: 1
+    Info (12023): Found entity 1: edge_detect File: D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file lab1.v
     Info (12023): Found entity 1: lab1 File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mod_1sec.v
     Info (12023): Found entity 1: mod_1sec File: D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_counter.v
     Info (12023): Found entity 1: Clock_Counter File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at edge_detect.v(17): created implicit net for "fail_pos_edge" File: D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v Line: 17
 Info (12127): Elaborating entity "lab1" for the top level hierarchy
 Info (12128): Elaborating entity "mod_1sec" for hierarchy "mod_1sec:u1" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 18
 Info (12128): Elaborating entity "Clock_Counter" for hierarchy "Clock_Counter:u3" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 22
 Warning (10030): Net "buffer[31..28]" at Clock_Counter.v(9) has no driver or initial value, using a default initial value '0' File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 9
 Info (12128): Elaborating entity "edge_detect" for hierarchy "Clock_Counter:u3|edge_detect:gen[0].edges" File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 24
-Warning (10036): Verilog HDL or VHDL warning at edge_detect.v(17): object "fail_pos_edge" assigned a value but never read File: D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v Line: 17
 Info (12128): Elaborating entity "bcd_counter" for hierarchy "Clock_Counter:u3|bcd_counter:gen[0].count" File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 25
 Info (12128): Elaborating entity "SEG_HEX" for hierarchy "SEG_HEX:digit0" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 5
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 5
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 5
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 5
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 5
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 5
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 5
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 6
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 6
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 6
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 6
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 6
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 6
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 6
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 7
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 7
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 7
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 7
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 7
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 7
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 7
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 8
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 8
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 8
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 8
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 8
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 8
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 8
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 9
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 9
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 9
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 9
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 9
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 9
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 9
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 10
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 10
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 10
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 10
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 10
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 10
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 10
+    Warning (13410): Pin "HEX6[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 11
+    Warning (13410): Pin "HEX6[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 11
+    Warning (13410): Pin "HEX6[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 11
+    Warning (13410): Pin "HEX6[3]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 11
+    Warning (13410): Pin "HEX6[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 11
+    Warning (13410): Pin "HEX6[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 11
+    Warning (13410): Pin "HEX6[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 11
     Warning (13410): Pin "HEX7[0]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 13
     Warning (13410): Pin "HEX7[1]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 13
     Warning (13410): Pin "HEX7[2]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 13
@@ -430,22 +566,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX7[4]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 13
     Warning (13410): Pin "HEX7[5]" is stuck at GND File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 13
     Warning (13410): Pin "HEX7[6]" is stuck at VCC File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 13
-Info (286030): Timing-Driven Synthesis is running
+Info (17049): 48 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SMA_CLKIN" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 2
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 3
     Warning (15610): No output dependent on input pin "KEY[2]" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 3
     Warning (15610): No output dependent on input pin "KEY[3]" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 3
-Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 4
+    Warning (15610): No output dependent on input pin "KEY[0]" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 3
+    Warning (15610): No output dependent on input pin "SMA_CLKIN" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 2
+Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 60 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Thu Mar 17 03:59:33 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Thu Mar 17 14:01:47 2022
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:01:06
 
 

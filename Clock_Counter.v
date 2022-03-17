@@ -16,11 +16,11 @@ module Clock_Counter(
 	end
 	
 	wire [7:0] edged;
-	wire [7:0] toEdge;
+	wire [8:0] toEdge;
 	assign toEdge[0] = testSignal; 
 	genvar i;
 	generate
-		for(i = 0 ; i < 8 ; i = i + 1)begin : gen
+		for(i = 0 ; i < 7 ; i = i + 1)begin : gen
 			edge_detect edges(CLOCK_50,reset,toEdge[i],,edged[i]);
 			bcd_counter count(CLOCK_50,reset,oneHz,edged[i],buffer[i*4+:4]);
 			assign toEdge[i+1] = buffer[i*4+3];

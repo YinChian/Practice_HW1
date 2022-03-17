@@ -1,4 +1,3 @@
-`timescale 1ns/1ns
 module edge_detect (
    clk,
    rst_n,
@@ -15,7 +14,7 @@ output     neg_edge;
 reg        data_in_d1;
 reg        data_in_d2; 
 
-//assign fail_pos_edge =  data_in & ~data_in_d1;
+assign fail_pos_edge =  data_in & ~data_in_d1;
 
 assign pos_edge =  data_in_d1 & ~data_in_d2;
 assign neg_edge =  ~data_in_d1 & data_in_d2;

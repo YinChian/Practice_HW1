@@ -1,58 +1,97 @@
 # Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
-# do lab1_run_msim_gate_verilog.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do lab1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work gate_work 
+# vmap work rtl_work 
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+. {lab1.vo}
+# vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:00:15 on Mar 17,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." lab1.vo 
+# Start time: 13:57:47 on Mar 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v 
+# -- Compiling module bcd_counter
+# 
+# Top level modules:
+# 	bcd_counter
+# End time: 13:57:47 on Mar 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:47 on Mar 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v 
+# -- Compiling module SEG_HEX
+# 
+# Top level modules:
+# 	SEG_HEX
+# End time: 13:57:47 on Mar 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:47 on Mar 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v 
+# -- Compiling module edge_detect
+# 
+# Top level modules:
+# 	edge_detect
+# End time: 13:57:47 on Mar 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:48 on Mar 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v 
 # -- Compiling module lab1
-# -- Compiling module hard_block
 # 
 # Top level modules:
 # 	lab1
-# End time: 04:00:15 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 13:57:48 on Mar 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:48 on Mar 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v 
+# -- Compiling module mod_1sec
+# 
+# Top level modules:
+# 	mod_1sec
+# End time: 13:57:48 on Mar 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:48 on Mar 17,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v 
+# -- Compiling module Clock_Counter
+# 
+# Top level modules:
+# 	Clock_Counter
+# End time: 13:57:48 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:00:15 on Mar 17,2022
+# Start time: 13:57:48 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v 
 # -- Compiling module lab1_tb
 # 
 # Top level modules:
 # 	lab1_tb
-# End time: 04:00:15 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 13:57:48 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  lab1_tb
-# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" lab1_tb 
-# Start time: 04:00:15 on Mar 17,2022
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  lab1_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" lab1_tb 
+# Start time: 13:57:48 on Mar 17,2022
 # Loading work.lab1_tb
 # Loading work.lab1
-# Loading work.hard_block
-# Loading cycloneive_ver.cycloneive_io_obuf
-# Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_clkctrl
-# Loading cycloneive_ver.cycloneive_mux41
-# Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading altera_ver.dffeas
-# SDF 10.5b Compiler 2016.10 Oct  5 2016
-# 
-# Loading instances from lab1_v.sdo
-# Loading altera_ver.PRIM_GDFF_LOW
-# Loading timing data from lab1_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /lab1_tb File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v
+# Loading work.mod_1sec
+# Loading work.Clock_Counter
+# Loading work.SEG_HEX
+# Loading work.edge_detect
+# Loading work.bcd_counter
 # 
 # add wave *
 # view structure
@@ -60,57 +99,9 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# time=  0,reset_n=0,key0=x,hex0=xx hex1=xx hex2=xx hex3=xx hex4=xx hex5=xx hex6=xx hex7=40
-# time=  5,reset_n=0,key0=x,hex0=xX hex1=xx hex2=xx hex3=xx hex4=xx hex5=xx hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xx hex2=xx hex3=xx hex4=xx hex5=xx hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xx hex2=xx hex3=xx hex4=xx hex5=xx hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xx hex2=xx hex3=xx hex4=xx hex5=xX hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xX hex2=xx hex3=xx hex4=xx hex5=xX hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xX hex2=xx hex3=xx hex4=xx hex5=xX hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xX hex2=xx hex3=xx hex4=xX hex5=xX hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xX hex2=xX hex3=xx hex4=xX hex5=xX hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=xX hex2=xX hex3=xx hex4=xX hex5=xX hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=XX hex2=xX hex3=xx hex4=xX hex5=xX hex6=xx hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=XX hex2=xX hex3=xx hex4=xX hex5=xX hex6=xX hex7=40
-# time=  6,reset_n=0,key0=x,hex0=XX hex1=XX hex2=xX hex3=xx hex4=xX hex5=xX hex6=xX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=xX hex3=xX hex4=xX hex5=xX hex6=xX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=xX hex3=XX hex4=xX hex5=xX hex6=xX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=xX hex3=XX hex4=xX hex5=xX hex6=xX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=XX hex3=XX hex4=xX hex5=xX hex6=xX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=X0 hex3=XX hex4=xX hex5=xX hex6=xX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=X0 hex3=XX hex4=xX hex5=xX hex6=xX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=X0 hex3=XX hex4=xX hex5=xX hex6=XX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=X0 hex3=XX hex4=XX hex5=xX hex6=XX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=X0 hex3=XX hex4=XX hex5=XX hex6=XX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=X0 hex3=XX hex4=XX hex5=XX hex6=XX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=X0 hex3=XX hex4=XX hex5=XX hex6=XX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=XX hex2=40 hex3=XX hex4=XX hex5=XX hex6=XX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=X0 hex2=40 hex3=XX hex4=XX hex5=XX hex6=XX hex7=40
-# time=  7,reset_n=0,key0=x,hex0=XX hex1=X0 hex2=40 hex3=XX hex4=XX hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=XX hex4=XX hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=XX hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=XX hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=XX hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=XX hex6=XX hex7=40
-# time=  8,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=XX hex6=XX hex7=40
-# time=  9,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=4X hex6=XX hex7=40
-# time=  9,reset_n=0,key0=x,hex0=4X hex1=X0 hex2=40 hex3=4X hex4=4X hex5=4X hex6=XX hex7=40
-# time=  9,reset_n=0,key0=x,hex0=4X hex1=40 hex2=40 hex3=4X hex4=4X hex5=4X hex6=XX hex7=40
-# time=  9,reset_n=0,key0=x,hex0=4X hex1=40 hex2=40 hex3=4X hex4=4X hex5=4X hex6=XX hex7=40
-# time=  9,reset_n=0,key0=x,hex0=4X hex1=40 hex2=40 hex3=4X hex4=4X hex5=4X hex6=XX hex7=40
-# time= 10,reset_n=0,key0=x,hex0=4X hex1=40 hex2=40 hex3=40 hex4=4X hex5=4X hex6=XX hex7=40
-# time= 10,reset_n=0,key0=x,hex0=4X hex1=40 hex2=40 hex3=40 hex4=4X hex5=40 hex6=XX hex7=40
-# time= 10,reset_n=0,key0=x,hex0=40 hex1=40 hex2=40 hex3=40 hex4=4X hex5=40 hex6=XX hex7=40
-# time= 10,reset_n=0,key0=x,hex0=40 hex1=40 hex2=40 hex3=40 hex4=4X hex5=40 hex6=X0 hex7=40
-# time= 10,reset_n=0,key0=x,hex0=40 hex1=40 hex2=40 hex3=40 hex4=4X hex5=40 hex6=40 hex7=40
-# time= 10,reset_n=0,key0=x,hex0=40 hex1=40 hex2=40 hex3=40 hex4=40 hex5=40 hex6=40 hex7=40
+# time=  0,reset_n=0,key0=x,hex0=40 hex1=40 hex2=40 hex3=40 hex4=40 hex5=40 hex6=40 hex7=40
 # time= 30,reset_n=1,key0=x,hex0=40 hex1=40 hex2=40 hex3=40 hex4=40 hex5=40 hex6=40 hex7=40
-# ** Note: $stop    : D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v(64)
-#    Time: 114000030 ns  Iteration: 0  Instance: /lab1_tb
-# Break in Module lab1_tb at D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v line 64
-# End time: 04:04:11 on Mar 17,2022, Elapsed time: 0:03:56
+# Break key hit
+# Break in Module edge_detect at D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v line 24
+# End time: 13:59:31 on Mar 17,2022, Elapsed time: 0:01:43
 # Errors: 0, Warnings: 0
