@@ -12,79 +12,79 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v 
 # -- Compiling module bcd_counter
 # 
 # Top level modules:
 # 	bcd_counter
-# End time: 21:09:19 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 23:54:05 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v 
 # -- Compiling module SEG_HEX
 # 
 # Top level modules:
 # 	SEG_HEX
-# End time: 21:09:19 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 23:54:05 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v 
 # -- Compiling module edge_detect
 # 
 # Top level modules:
 # 	edge_detect
-# End time: 21:09:19 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 23:54:05 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v 
 # -- Compiling module lab1
 # 
 # Top level modules:
 # 	lab1
-# End time: 21:09:19 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 23:54:05 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v 
 # -- Compiling module mod_1sec
 # 
 # Top level modules:
 # 	mod_1sec
-# End time: 21:09:19 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 23:54:05 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v 
 # -- Compiling module Clock_Counter
 # 
 # Top level modules:
 # 	Clock_Counter
-# End time: 21:09:19 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 23:54:05 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/Digital_Logic_Design/Pratice/Homework\ 1 {D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Digital_Logic_Design/Pratice/Homework 1" D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v 
 # -- Compiling module lab1_tb
 # 
 # Top level modules:
 # 	lab1_tb
-# End time: 21:09:19 on Mar 17,2022, Elapsed time: 0:00:00
+# End time: 23:54:05 on Mar 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  lab1_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" lab1_tb 
-# Start time: 21:09:19 on Mar 17,2022
+# Start time: 23:54:05 on Mar 17,2022
 # Loading work.lab1_tb
 # Loading work.lab1
 # Loading work.mod_1sec
@@ -92,5 +92,26 @@
 # Loading work.SEG_HEX
 # Loading work.bcd_counter
 # Loading work.edge_detect
-# End time: 21:09:23 on Mar 17,2022, Elapsed time: 0:00:04
-# Errors: 0, Warnings: 0
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 91kev  Hostname: SONIC-THE-HEDGE  ProcessID: 26700
+#           Attempting to use alternate WLF file "./wlftd9j9n7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd9j9n7
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time=  0,reset_n=0,key0=x,hex0=xx hex1=xx hex2=xx hex3=xx hex4=xx hex5=xx hex6=xx hex7=xx
+# time= 30,reset_n=1,key0=x,hex0=xx hex1=xx hex2=xx hex3=xx hex4=xx hex5=xx hex6=xx hex7=xx
+# time=2000031,reset_n=1,key0=x,hex0=40 hex1=40 hex2=40 hex3=40 hex4=40 hex5=40 hex6=40 hex7=40
+# time=14100032,reset_n=1,key0=x,hex0=02 hex1=02 hex2=02 hex3=02 hex4=79 hex5=40 hex6=40 hex7=40
+# time=14200034,reset_n=1,key0=x,hex0=78 hex1=02 hex2=02 hex3=02 hex4=79 hex5=40 hex6=40 hex7=40
+# A time value could not be extracted from the current line
+# ** Note: $stop    : D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v(74)
+#    Time: 114000030 ns  Iteration: 0  Instance: /lab1_tb
+# Break in Module lab1_tb at D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v line 74
+# End time: 00:01:28 on Mar 18,2022, Elapsed time: 0:07:23
+# Errors: 0, Warnings: 2

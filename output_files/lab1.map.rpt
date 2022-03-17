@@ -1,5 +1,5 @@
 Analysis & Elaboration report for lab1
-Thu Mar 17 21:09:11 2022
+Thu Mar 17 23:53:56 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -11,8 +11,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
   5. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances"
-  6. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge"
-  7. Analysis & Elaboration Messages
+  6. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances"
+  7. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances"
+  8. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances"
+  9. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances"
+ 10. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances"
+ 11. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances"
+ 12. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge"
+ 13. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances"
+ 14. Analysis & Elaboration Messages
 
 
 
@@ -38,7 +45,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Mar 17 21:09:11 2022       ;
+; Analysis & Elaboration Status      ; Successful - Thu Mar 17 23:53:56 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
@@ -163,7 +170,62 @@ refer to the applicable agreement for further details.
 ; Port  ; Type   ; Severity ; Details                                                                             ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; tick  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -175,13 +237,22 @@ refer to the applicable agreement for further details.
 +----------+--------+----------+---------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Mar 17 21:09:01 2022
+    Info: Processing started: Thu Mar 17 23:53:46 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -200,15 +271,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file mod_1se
 Info (12021): Found 1 design units, including 1 entities, in source file clock_counter.v
     Info (12023): Found entity 1: Clock_Counter File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 3
 Info (12127): Elaborating entity "lab1" for the top level hierarchy
-Info (12128): Elaborating entity "mod_1sec" for hierarchy "mod_1sec:u1" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 19
-Info (12128): Elaborating entity "Clock_Counter" for hierarchy "Clock_Counter:u3" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 23
-Info (12128): Elaborating entity "bcd_counter" for hierarchy "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances" File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 27
-Info (12128): Elaborating entity "edge_detect" for hierarchy "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge" File: D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v Line: 14
-Info (12128): Elaborating entity "SEG_HEX" for hierarchy "SEG_HEX:digit0" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 25
+Info (12128): Elaborating entity "mod_1sec" for hierarchy "mod_1sec:u1" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 21
+Info (12128): Elaborating entity "Clock_Counter" for hierarchy "Clock_Counter:u3" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 25
+Info (12128): Elaborating entity "bcd_counter" for hierarchy "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances" File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 31
+Info (12128): Elaborating entity "edge_detect" for hierarchy "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge" File: D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v Line: 16
+Info (12128): Elaborating entity "SEG_HEX" for hierarchy "SEG_HEX:digit0" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 28
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4714 megabytes
-    Info: Processing ended: Thu Mar 17 21:09:11 2022
+    Info: Peak virtual memory: 4713 megabytes
+    Info: Processing ended: Thu Mar 17 23:53:56 2022
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
 
 

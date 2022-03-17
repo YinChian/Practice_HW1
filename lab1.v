@@ -10,18 +10,21 @@ module lab1(
 	output [6:0] HEX5,
 	output [6:0] HEX6,
 	output [6:0] HEX7,
-	output oneHz
+	output oneHz,	//for Debugging
+	output tick		//for Debugging
 );
+	
+	//Set reset to Key[0]
 	wire reset = KEY[0];
 	
-	
-	//wire oneHz;
+	//1Hz Signal Generater
 	mod_1sec u1(CLOCK_50,reset,oneHz);
 	
-	
+	//The Counter Block
 	wire [31:0] result;
-	Clock_Counter u3(CLOCK_50,reset,oneHz,SMA_CLKIN,result);
+	Clock_Counter u3(CLOCK_50,reset,oneHz,SMA_CLKIN,result,tick);
 	
+	//7Seg Decoder
 	SEG_HEX digit0(result[3 :0 ],HEX0);
 	SEG_HEX digit1(result[7 :4 ],HEX1);
 	SEG_HEX digit2(result[11:8 ],HEX2);

@@ -7,7 +7,7 @@ reg reset_n;  //low active
 reg key0;     //low active
 reg clk_sma;  // test clock
 reg [3:0] key;
-wire oneHz;
+wire oneHz;		//Debugging
 wire [6:0] hex0;
 wire [6:0] hex1;
 wire [6:0] hex2;
@@ -16,7 +16,7 @@ wire [6:0] hex4;
 wire [6:0] hex5;
 wire [6:0] hex6;
 wire [6:0] hex7;
-
+wire tick;
 
 
 lab1 u1(
@@ -35,7 +35,8 @@ lab1 u1(
                 ///////////////////////
                 .SMA_CLKIN(clk_sma),
 					 ///////////////////////
-					 .oneHz(oneHz)
+					 .oneHz(oneHz), //Debugging
+					 .tick(tick)
                                
         );  
 		  
@@ -45,6 +46,7 @@ always
   
 always
   #31 clk_sma = ~clk_sma;  // 16129032Hz
+								  // 16666666Hz
   
 //assign key[0] = reset_n;
 //assign key[1] = reset_n;
@@ -62,14 +64,12 @@ initial
   #30 reset_n = 1;  
   
   #2_000_000
-  //#200
   key[0] = 0;     // key0 press
+  
   #12_000_000
-  //#1200
   key[0] = 1;     // key0 release
   
-  #200_000_000_0; // simualtion 100ms // 2sec
-  //#10_000
+  #100_000_000; // simualtion 100ms
   
   $stop;
   end

@@ -62,6 +62,7 @@ HEX7[4] << SEG_HEX:digit7.port1
 HEX7[5] << SEG_HEX:digit7.port1
 HEX7[6] << SEG_HEX:digit7.port1
 oneHz << oneHz.DB_MAX_OUTPUT_PORT_TYPE
+tick << Clock_Counter:u3.port5
 
 
 |lab1|mod_1sec:u1
@@ -157,6 +158,7 @@ result[28] <= result[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 result[29] <= result[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 result[30] <= result[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= result[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances
@@ -172,6 +174,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge
@@ -197,6 +200,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances|edge_detect:falling_edge
@@ -222,6 +226,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances|edge_detect:falling_edge
@@ -247,6 +252,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances|edge_detect:falling_edge
@@ -272,6 +278,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances|edge_detect:falling_edge
@@ -297,6 +304,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances|edge_detect:falling_edge
@@ -322,6 +330,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances|edge_detect:falling_edge
@@ -347,6 +356,7 @@ now[1] <= now[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[2] <= now[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 now[3] <= now[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 carry <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+tick <= edge_detect:falling_edge.port4
 
 
 |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances|edge_detect:falling_edge

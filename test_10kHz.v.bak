@@ -1,0 +1,19 @@
+module test_5kHz(
+	input clk_50M,
+	input reset,
+	output clk_10k
+);
+	
+	reg [8:0] count;
+	always@(posedge clk_50m,negedge reset)begin
+		if(!reset) begin
+			count <= 9'b0;
+			clk_5k <= 1'b0;
+		end
+		else begin
+			if(count > 9'd5000) count <= 9'd0;
+			else count <= count + 1'b0;
+		end
+	end
+	
+endmodule
