@@ -17,7 +17,7 @@ module bcd_counter(
 		if(!reset ) now <= 4'h0;
 		else if(oneHz) now <= 4'h0;
 		else if(tick)begin
-			if(now > 4'h9) now <= 4'h0;
+			if(now == 4'h9) now <= 4'h0;
 			else now <= now + 4'h1;
 		end 
 		else begin

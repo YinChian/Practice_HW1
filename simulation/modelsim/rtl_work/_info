@@ -9,27 +9,27 @@ z2
 cModel Technology
 Z0 dD:/Digital_Logic_Design/Pratice/Homework 1/simulation/modelsim
 vbcd_counter
-Z1 !s110 1647522559
+Z1 !s110 1647534921
 !i10b 1
-!s100 :O;M`U8O7WijIf?Da2<V02
-InPnU1Vbo6glnWPG>fK3C13
+!s100 3kfR_>=P5AgBoX48<oQDA2
+IK]Y>@@d4XRkf@e@8:<dRn3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1647519867
+w1647534708
 8D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v
 L0 3
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1647522559.000000
+Z4 !s108 1647534921.000000
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v|
 !i113 1
-Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work {+incdir+D:/Digital_Logic_Design/Pratice/Homework 1}
-Z8 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+D:/Digital_Logic_Design/Pratice/Homework 1}
+Z7 tCvgOpt 0
 vClock_Counter
 R1
 !i10b 1
@@ -37,21 +37,21 @@ R1
 IhQbA`[CA`d3>D?a=ENSz_2
 R2
 R0
-R3
+Z8 w1647533696
 8D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v
 L0 3
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@clock_@counter
 vedge_detect
 R1
@@ -64,17 +64,17 @@ w1647496879
 8D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v|
 !i113 1
+R5
 R6
 R7
-R8
 vlab1
 R1
 !i10b 1
@@ -82,65 +82,65 @@ R1
 IV3lE_Qk[ADFOiKl0:Y>f22
 R2
 R0
-w1647519512
+R8
 8D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/lab1.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v|
 !i113 1
+R5
 R6
 R7
-R8
 vlab1_tb
 R1
 !i10b 1
-!s100 Rlb:8MNmY0dF^?8XdOOQ=1
-Iz2Qf8fiCL:iWD0T3_0AXO2
+!s100 H8_7Ig6G825bNE5H4P93l0
+IUd:hIh5<mmZDJOKVefg4>2
 R2
 R0
-w1647520505
+w1647534905
 8D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v
 L0 3
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/lab1_tb.v|
 !i113 1
+R5
 R6
 R7
-R8
 vmod_1sec
 R1
 !i10b 1
-!s100 SgDMK7=a1]oLBD=>CJ8d32
-IRaO18W<PmCKV``g:J;n:P2
+!s100 ohkGZm_bF[0>O1WHRKO]80
+IhX[N4m];PYl8Alb?ZSbKA0
 R2
 R0
-w1647520139
+w1647534512
 8D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v|
 !i113 1
+R5
 R6
 R7
-R8
 vSEG_HEX
 R1
 !i10b 1
@@ -152,15 +152,15 @@ w1647430599
 8D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v
 FD:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v
 L0 44
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Digital_Logic_Design/Pratice/Homework 1|D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@s@e@g_@h@e@x

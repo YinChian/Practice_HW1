@@ -1,5 +1,5 @@
 Analysis & Elaboration report for lab1
-Thu Mar 17 21:09:11 2022
+Fri Mar 18 00:33:33 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Mar 17 21:09:11 2022       ;
+; Analysis & Elaboration Status      ; Successful - Fri Mar 18 00:33:33 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
@@ -181,7 +181,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Mar 17 21:09:01 2022
+    Info: Processing started: Fri Mar 18 00:33:23 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -206,9 +206,9 @@ Info (12128): Elaborating entity "bcd_counter" for hierarchy "Clock_Counter:u3|b
 Info (12128): Elaborating entity "edge_detect" for hierarchy "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge" File: D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v Line: 14
 Info (12128): Elaborating entity "SEG_HEX" for hierarchy "SEG_HEX:digit0" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 25
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4714 megabytes
-    Info: Processing ended: Thu Mar 17 21:09:11 2022
+    Info: Peak virtual memory: 4711 megabytes
+    Info: Processing ended: Fri Mar 18 00:33:33 2022
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
 
 

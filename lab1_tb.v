@@ -44,7 +44,7 @@ always
   #10 clk_50M = ~clk_50M;
   
 always
-  #31 clk_sma = ~clk_sma;  // 16129032Hz
+  #31 clk_sma = ~clk_sma;  
   
 //assign key[0] = reset_n;
 //assign key[1] = reset_n;
@@ -68,7 +68,7 @@ initial
   //#1200
   key[0] = 1;     // key0 release
   
-  #200_000_000_0; // simualtion 100ms // 2sec
+  #100_000_000; // simualtion 100ms // 2sec
   //#10_000
   
   $stop;
