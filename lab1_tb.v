@@ -62,14 +62,12 @@ initial
   #30 reset_n = 1;  
   
   #2_000_000
-  //#200
   key[0] = 0;     // key0 press
+  
   #12_000_000
-  //#1200
   key[0] = 1;     // key0 release
   
-  #100_000_000; // simualtion 100ms // 2sec
-  //#10_000
+  #100_000_000; // simualtion 100ms
   
   $stop;
   end

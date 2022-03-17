@@ -9,8 +9,7 @@ module lab1(
 	output [6:0] HEX4,
 	output [6:0] HEX5,
 	output [6:0] HEX6,
-	output [6:0] HEX7,
-	output oneHz
+	output [6:0] HEX7
 );
 	wire reset = KEY[0];
 	
