@@ -14,7 +14,7 @@ module lab1(
 	wire reset = KEY[0];
 	
 	
-	//wire oneHz;
+	wire oneHz;
 	mod_1sec u1(CLOCK_50,reset,oneHz);
 	
 	

@@ -7,7 +7,7 @@ reg reset_n;  //low active
 reg key0;     //low active
 reg clk_sma;  // test clock
 reg [3:0] key;
-wire oneHz;
+//wire oneHz;
 wire [6:0] hex0;
 wire [6:0] hex1;
 wire [6:0] hex2;
@@ -33,9 +33,9 @@ lab1 u1(
                 .HEX6(hex6),
                 .HEX7(hex7),
                 ///////////////////////
-                .SMA_CLKIN(clk_sma),
+                .SMA_CLKIN(clk_sma)
 					 ///////////////////////
-					 .oneHz(oneHz)
+					 //.oneHz(oneHz)
                                
         );  
 		  

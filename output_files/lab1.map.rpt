@@ -1,5 +1,5 @@
-Analysis & Synthesis report for lab1
-Fri Mar 18 00:56:51 2022
+Analysis & Elaboration report for lab1
+Wed Mar 23 20:43:57 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,19 +7,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances"
- 11. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:D7"
+  6. Port Connectivity Checks: "Clock_Counter:u3|edge_detect:detect"
+  7. Analysis & Elaboration Messages
 
 
 
@@ -43,27 +36,43 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 18 00:56:51 2022       ;
+; Analysis & Elaboration Status      ; Successful - Wed Mar 23 20:43:57 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 209                                         ;
-;     Total combinational functions  ; 168                                         ;
-;     Dedicated logic registers      ; 106                                         ;
-; Total registers                    ; 106                                         ;
-; Total pins                         ; 62                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -148,194 +157,32 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
-+----------------------------+-------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:D7"                                                                          ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; carry ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
-; bcd_counter.v                    ; yes             ; User Verilog HDL File  ; D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v   ;         ;
-; SEG_HEX.v                        ; yes             ; User Verilog HDL File  ; D:/Digital_Logic_Design/Pratice/Homework 1/SEG_HEX.v       ;         ;
-; edge_detect.v                    ; yes             ; User Verilog HDL File  ; D:/Digital_Logic_Design/Pratice/Homework 1/edge_detect.v   ;         ;
-; lab1.v                           ; yes             ; User Verilog HDL File  ; D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v          ;         ;
-; mod_1sec.v                       ; yes             ; User Verilog HDL File  ; D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v      ;         ;
-; Clock_Counter.v                  ; yes             ; User Verilog HDL File  ; D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Counter:u3|edge_detect:detect"                                                                         ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                  ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; neg_edge ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 209            ;
-;                                             ;                ;
-; Total combinational functions               ; 168            ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 88             ;
-;     -- 3 input functions                    ; 33             ;
-;     -- <=2 input functions                  ; 47             ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 143            ;
-;     -- arithmetic mode                      ; 25             ;
-;                                             ;                ;
-; Total registers                             ; 106            ;
-;     -- Dedicated logic registers            ; 106            ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 62             ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 106            ;
-; Total fan-out                               ; 1044           ;
-; Average fan-out                             ; 2.62           ;
-+---------------------------------------------+----------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                               ;
-+--------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node                             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name   ; Library Name ;
-+--------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+---------------+--------------+
-; |lab1                                                  ; 168 (0)             ; 106 (0)                   ; 0           ; 0            ; 0       ; 0         ; 62   ; 0            ; |lab1                                                                                          ; lab1          ; work         ;
-;    |Clock_Counter:u3|                                  ; 64 (0)              ; 80 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3                                                                         ; Clock_Counter ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[0].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[1].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[2].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[3].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[4].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[5].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[6].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;       |bcd_counter:Generate_BCD_Counters[7].instances| ; 8 (8)               ; 6 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances                          ; bcd_counter   ; work         ;
-;          |edge_detect:falling_edge|                    ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances|edge_detect:falling_edge ; edge_detect   ; work         ;
-;    |SEG_HEX:digit0|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit0                                                                           ; SEG_HEX       ; work         ;
-;    |SEG_HEX:digit1|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit1                                                                           ; SEG_HEX       ; work         ;
-;    |SEG_HEX:digit2|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit2                                                                           ; SEG_HEX       ; work         ;
-;    |SEG_HEX:digit3|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit3                                                                           ; SEG_HEX       ; work         ;
-;    |SEG_HEX:digit4|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit4                                                                           ; SEG_HEX       ; work         ;
-;    |SEG_HEX:digit5|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit5                                                                           ; SEG_HEX       ; work         ;
-;    |SEG_HEX:digit6|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit6                                                                           ; SEG_HEX       ; work         ;
-;    |SEG_HEX:digit7|                                    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|SEG_HEX:digit7                                                                           ; SEG_HEX       ; work         ;
-;    |mod_1sec:u1|                                       ; 48 (48)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|mod_1sec:u1                                                                              ; mod_1sec      ; work         ;
-+--------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+---------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 106   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 106   ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 64    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|now[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[1].instances|now[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[2].instances|now[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[3].instances|now[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[4].instances|now[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[5].instances|now[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[6].instances|now[3] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab1|Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances|now[3] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[7].instances"                     ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; carry ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge" ;
-+----------+--------+----------+---------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                               ;
-+----------+--------+----------+---------------------------------------------------------------------------------------+
-; pos_edge ; Output ; Info     ; Explicitly unconnected                                                                ;
-+----------+--------+----------+---------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 62                          ;
-; cycloneiii_ff         ; 106                         ;
-;     CLR               ; 42                          ;
-;     ENA CLR           ; 64                          ;
-; cycloneiii_lcell_comb ; 176                         ;
-;     arith             ; 25                          ;
-;         2 data inputs ; 25                          ;
-;     normal            ; 151                         ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 21                          ;
-;         3 data inputs ; 33                          ;
-;         4 data inputs ; 88                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 2.60                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Mar 18 00:56:38 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
+    Info: Processing started: Wed Mar 23 20:43:42 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter.v
@@ -350,30 +197,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file lab1.v
     Info (12023): Found entity 1: lab1 File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mod_1sec.v
     Info (12023): Found entity 1: mod_1sec File: D:/Digital_Logic_Design/Pratice/Homework 1/mod_1sec.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at Clock_Counter.v(21): ignored dangling comma in List of Port Connections File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 21
+Warning (10275): Verilog HDL Module Instantiation warning at Clock_Counter.v(33): ignored dangling comma in List of Port Connections File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file clock_counter.v
     Info (12023): Found entity 1: Clock_Counter File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at lab1.v(18): created implicit net for "oneHz" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 18
 Info (12127): Elaborating entity "lab1" for the top level hierarchy
 Info (12128): Elaborating entity "mod_1sec" for hierarchy "mod_1sec:u1" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 18
 Info (12128): Elaborating entity "Clock_Counter" for hierarchy "Clock_Counter:u3" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 22
-Info (12128): Elaborating entity "bcd_counter" for hierarchy "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances" File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 27
-Info (12128): Elaborating entity "edge_detect" for hierarchy "Clock_Counter:u3|bcd_counter:Generate_BCD_Counters[0].instances|edge_detect:falling_edge" File: D:/Digital_Logic_Design/Pratice/Homework 1/bcd_counter.v Line: 14
+Info (12128): Elaborating entity "edge_detect" for hierarchy "Clock_Counter:u3|edge_detect:detect" File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 21
+Info (12128): Elaborating entity "bcd_counter" for hierarchy "Clock_Counter:u3|bcd_counter:D0" File: D:/Digital_Logic_Design/Pratice/Homework 1/Clock_Counter.v Line: 26
 Info (12128): Elaborating entity "SEG_HEX" for hierarchy "SEG_HEX:digit0" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 24
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 3
-    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 3
-    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/Digital_Logic_Design/Pratice/Homework 1/lab1.v Line: 3
-Info (21057): Implemented 278 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 216 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Fri Mar 18 00:56:51 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4714 megabytes
+    Info: Processing ended: Wed Mar 23 20:43:57 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:40
 
 
