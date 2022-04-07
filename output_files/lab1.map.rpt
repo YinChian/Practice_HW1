@@ -1,5 +1,5 @@
 Analysis & Elaboration report for lab1
-Wed Mar 23 20:43:57 2022
+Tue Mar 29 16:55:54 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Wed Mar 23 20:43:57 2022       ;
+; Analysis & Elaboration Status      ; Successful - Tue Mar 29 16:55:54 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
@@ -181,7 +181,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 23 20:43:42 2022
+    Info: Processing started: Tue Mar 29 16:55:44 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -210,8 +210,8 @@ Info (12128): Elaborating entity "SEG_HEX" for hierarchy "SEG_HEX:digit0" File: 
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4714 megabytes
-    Info: Processing ended: Wed Mar 23 20:43:57 2022
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Processing ended: Tue Mar 29 16:55:54 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 
